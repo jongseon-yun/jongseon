@@ -1,0 +1,13 @@
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\bin\Debug\netcoreapp3.1\csharpprac.exe
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\bin\Debug\netcoreapp3.1\csharpprac.deps.json
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\bin\Debug\netcoreapp3.1\csharpprac.runtimeconfig.json
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\bin\Debug\netcoreapp3.1\csharpprac.runtimeconfig.dev.json
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\bin\Debug\netcoreapp3.1\csharpprac.dll
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\bin\Debug\netcoreapp3.1\csharpprac.pdb
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\obj\Debug\netcoreapp3.1\csharpprac.csprojAssemblyReference.cache
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\obj\Debug\netcoreapp3.1\csharpprac.AssemblyInfoInputs.cache
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\obj\Debug\netcoreapp3.1\csharpprac.AssemblyInfo.cs
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\obj\Debug\netcoreapp3.1\csharpprac.csproj.CoreCompileInputs.cache
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\obj\Debug\netcoreapp3.1\csharpprac.dll
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\obj\Debug\netcoreapp3.1\csharpprac.pdb
+C:\Users\hanma\Documents\jongseonyun\4csharp\csharpprac\obj\Debug\netcoreapp3.1\csharpprac.genruntimeconfig.cache
