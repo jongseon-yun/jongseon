@@ -81,3 +81,4 @@ print(word)
 # 내장 함수 len() 은 문자열의 길이를 돌려줍니다
 s = 'supercalifragilisticexpialidocious'
 print(len(s))
+
