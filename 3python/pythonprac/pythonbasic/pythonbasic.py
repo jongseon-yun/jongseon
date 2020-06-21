@@ -273,3 +273,86 @@ def ask_ok(prompt, retries=4, reminder='Please try again!'):
 ask_ok('정말 끝내길 원하세요?')
 ask_ok('파일을 덮어써도 좋습니까?', 2)
 ask_ok('파일을 덮어써도 좋습니까?', 2, '자, 예나 아니요로만 답하세요!')
+
+# 이 예는 in 키워드도 소개하고 있습니다. 시퀀스가 어떤 값을 가졌는지 아닌지를 검사합니다.
+# 기본값은 함수 정의 시점에 정의되고 있는 스코프에서 구해집니다
+i = 5
+def f(arg=i):
+    print(arg)
+i = 6
+f()
+
+#중요한 주의사항:
+# 기본값은 오직 한 번만 값이 구해집니다.
+# 이것은 기본값이 리스트나 딕셔너리나 대부분 클래스의 인스턴스와 같은 가변 객체일 때 차이를 만듭니다.
+# 예를 들어, 다음 함수는 계속되는 호출로 전달된 인자들을 누적합니다
+
+def f(a, L=[]):
+    L.append(a)
+    return L
+
+print(f(1))
+print(f(2))
+print(f(3))
+
+# 연속된 호출 간에 기본값이 공유되지 않기를 원한다면, 대신 함수를 이런 식으로 쓸 수 있습니다
+def f(a, L=None):
+    if L is None:
+        L = []
+    L.append(a)
+    return L
+print(f(1))
+print(f(2))
+print(f(3))
+
+# 함수는 kwarg=value 형식의 키워드 인자 를 사용해서 호출될 수 있습니다. 예를 들어, 다음 함수는
+def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
+    print("-- This parrot wouldn't", action, end=' ')
+    print("if you put", voltage, "volts through it.")
+    print("-- Lovely plumage, the", type)
+    print("-- It's", state, "!")
+# 하나의 필수 인자(voltage)와 세 개의 선택적 인자 (state, action, type) 를 받아들입니다.
+# 이 함수는 다음과 같은 방법 중 아무것으로나 호출될 수 있습니다.
+parrot(1000)                                          # 1 positional argument
+parrot(voltage=1000)                                  # 1 keyword argument
+parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
+parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
+parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
+parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
+
+# 하지만 다음과 같은 호출들은 모두 올바르지 않습니다:
+parrot()                     # required argument missing
+parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument
+parrot(110, voltage=220)     # duplicate value for the same argument
+parrot(actor='John Cleese')  # unknown keyword argument
+
+# 함수 호출에서, 키워드 인자는 위치 인자 뒤에 나와야 합니다.
+# 전달된 모든 키워드 인자는 함수가 받아들이는 인자 중 하나와 맞아야 하며
+# (예를 들어, actor는 parrot 함수의 올바른 인자가 아니다), 그 순서는 중요하지 않습니다.
+# 이것들에는 필수 인자들도 포함됩니다 (예를 들어, parrot(voltage=1000) 도 올바릅니다).
+# 어떤 인자도 두 개 이상의 값을 받을 수 없습니다. 여기, 이 제약 때문에 실패하는 예가 있습니다
+
+def function(a):
+     pass
+function(0, a=0)
+
+# **name 형식의 마지막 형식 매개변수가 존재하면,
+# 형식 매개변수들에 대응하지 않는 모든 키워드 인자들을 담은 딕셔너리 (매핑 형 — dict 를 보세요) 를 받습니다.
+# 이것은 *name (다음 서브섹션에서 설명합니다) 형식의 형식 매개변수와 조합될 수 있는데,
+# 형식 매개변수 목록 밖의 위치 인자들을 담은 튜플을 받습니다.
+# (*name은 **name 앞에 나와야 합니다.) 예를 들어, 이런 함수를 정의하면
+def cheeseshop(kind, *arguments, **keywords):
+    print("-- Do you have any", kind, "?")
+    print("-- I'm sorry, we're all out of", kind)
+    for arg in arguments:
+        print(arg)
+    print("-" * 40)
+    for kw in keywords:
+        print(kw, ":", keywords[kw])
+
+cheeseshop("Limburger", "It's very runny, sir.",
+           "It's really very, VERY runny, sir.",
+           shopkeeper="Michael Palin",
+           client="John Cleese",
+           sketch="Cheese Shop Sketch")
+
