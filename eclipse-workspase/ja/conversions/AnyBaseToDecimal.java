@@ -1,4 +1,4 @@
-package Conversions;
+package conversions;
 
 public class AnyBaseToDecimal {
     public static void main(String[] args) {
