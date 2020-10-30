@@ -1,4 +1,4 @@
-package problems.october2020.level2;
+package problems.october2020.level2.thursday1029.ans;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

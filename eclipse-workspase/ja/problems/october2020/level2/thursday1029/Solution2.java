@@ -1,4 +1,4 @@
-package problems.october2020.level2;
+package problems.october2020.level2.thursday1029;
 
 import java.util.ArrayList;
 import java.util.List;
