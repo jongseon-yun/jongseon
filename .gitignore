@@ -1,7 +1,15 @@
 PycharmProjects/py/venv
 PycharmProjects/py/.idea
 
+
+
 eclipse-workspase/.metadata
+eclipse-workspase/ja/.classpath
+eclipse-workspase/ja/.project
+eclipse-workspase/ja/.settings
+eclipse-workspase/ja/.class
+
+
 
 repos/cp/.vs
 repos/cp/Debug
