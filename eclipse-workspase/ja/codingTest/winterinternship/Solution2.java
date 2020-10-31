@@ -10,17 +10,7 @@ public class Solution2 {
 	private static String solution(int n, int[][] delivery) {
 		String answer = "";
 		
-//		for (int i = 0; i < delivery.length; i++) {
-//			for (int j = 0; j < delivery[i].length; j++) {
-//				System.out.println(delivery[i][j]);
-//			}
-//		}
-		
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < delivery[n].length; j++) {
-				
-			}
-		}
+
 		return answer;
 	}
 }
