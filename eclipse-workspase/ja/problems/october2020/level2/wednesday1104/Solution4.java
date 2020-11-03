@@ -6,6 +6,6 @@ public class Solution4 {
 	}
 
 	private static void solution() {
-d
+
 	}
 }
