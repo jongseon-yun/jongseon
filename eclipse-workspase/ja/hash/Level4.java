@@ -1,11 +1,9 @@
 package hash;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import static java.util.stream.Collectors.*;
 
 public class Level4 {
