@@ -1,6 +1,3 @@
-eclipse-workspase/*.metadata
-eclipse-workspase/ja/*.classpath
-eclipse-workspase/ja/*.settings
-eclipse-workspase/ja/*.class
-*/.project
-/.metadata/
+/.metadata
+/.git
+/.gitignore
