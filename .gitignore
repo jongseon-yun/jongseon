@@ -1,3 +1,16 @@
+<<<<<<< HEAD
 /.metadata
 /.git
 /.gitignore
+=======
+
+*.metadata
+ja/*.classpath
+ja/*.project
+ja/*.settings
+ja/*.class
+js/*.classpath
+js/*.project
+js/*.settings
+js/*.class
+>>>>>>> 68105553b3fb14ac57adc80683fabcfc5e475495
